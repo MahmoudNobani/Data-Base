@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="468.0" style="-fx-background-color: #8A2BE2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.BranchCon">
+   <children>
+      <TableView fx:id="Table" layoutX="223.0" layoutY="18.0" prefHeight="223.0" prefWidth="226.0">
+        <columns>
+          <TableColumn fx:id="ID" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="Address" onEditCommit="#updateaddress" prefWidth="75.0" text="Address" />
+            <TableColumn fx:id="Line" onEditCommit="#updateline" prefWidth="75.0" text="Landline" />
+        </columns>
+      </TableView>
+      <Button fx:id="add" layoutX="70.0" layoutY="117.0" mnemonicParsing="false" onAction="#ADD" text="add" />
+      <Button fx:id="refresh" layoutX="268.0" layoutY="255.0" mnemonicParsing="false" onAction="#refresh" text="Refresh" />
+      <Button fx:id="delete" layoutX="362.0" layoutY="255.0" mnemonicParsing="false" onAction="#delete" text="delete" />
+      <TextField fx:id="txtLine" layoutX="14.0" layoutY="79.0" promptText="landLine" />
+      <TextField fx:id="txtAdd" layoutX="14.0" layoutY="32.0" promptText="address" />
+   </children>
+</AnchorPane>

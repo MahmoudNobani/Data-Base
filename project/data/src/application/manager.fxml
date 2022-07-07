@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.manager">
+   <children>
+      <Pane layoutX="-154.0" layoutY="-121.0" prefHeight="250.0" prefWidth="400.0" style="-fx-background-color: #845EC5;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="emp" layoutX="26.0" layoutY="51.0" mnemonicParsing="false" onAction="#e" prefHeight="50.0" prefWidth="100.0" text="Employees" />
+            <Button fx:id="inv" layoutX="26.0" layoutY="113.0" mnemonicParsing="false" onAction="#i" prefHeight="50.0" prefWidth="100.0" text="Inventory" />
+            <Label fx:id="fname" layoutX="175.0" layoutY="88.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Label fx:id="lname" layoutX="285.0" layoutY="88.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Label fx:id="address" layoutX="175.0" layoutY="138.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Label fx:id="branchID" layoutX="285.0" layoutY="138.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Label fx:id="ID" layoutX="175.0" layoutY="190.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Label fx:id="salary" layoutX="285.0" layoutY="190.0" prefHeight="25.0" prefWidth="64.0" style="-fx-background-color: white;" />
+            <Separator layoutX="143.0" orientation="VERTICAL" prefHeight="250.0" />
+            <Label layoutX="175.0" layoutY="26.0" prefHeight="35.0" prefWidth="170.0" style="-fx-background-color: white;" text="       Employee info" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Button layoutX="26.0" layoutY="178.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" text="suppliers" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
